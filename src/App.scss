@@ -1,0 +1,18 @@
+@import './utilities//utils.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans Condensed';
+  padding: 20px 5px;
+  @include mq('md') {
+    padding: 20px 60px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
