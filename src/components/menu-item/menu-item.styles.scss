@@ -1,3 +1,5 @@
+@import '../../utilities/utils.scss';
+
 .menu-item {
   min-width: 30%;
   height: 240px;
@@ -23,7 +25,9 @@
   }
 
   &.large {
-    height: 380px;
+    @include mq('md') {
+      height: 380px;
+    }
   }
 
   &:first-child {
