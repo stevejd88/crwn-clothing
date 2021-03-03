@@ -1,3 +1,5 @@
+@import '../../utilities/utils.scss';
+
 .collection-preview {
   display: flex;
   flex-direction: column;
@@ -5,7 +7,10 @@
 
   .title {
     font-size: 28px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
+    @include mq('md') {
+      margin-bottom: 25px;
+    }
   }
 
   .preview {
