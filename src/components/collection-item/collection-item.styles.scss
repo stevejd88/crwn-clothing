@@ -1,10 +1,16 @@
+@import '../../utilities/utils.scss';
+
 .collection-item {
   width: 22vw;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 125px;
   align-items: center;
   position: relative;
+
+  @include mq('md') {
+    height: 350px;
+  }
 
   .image {
     width: 100%;
@@ -34,11 +40,15 @@
   }
 
   .collection-footer {
-    width: 100%;
+    width: 85%;
     height: 5%;
     display: flex;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 12px;
+    @include mq('md') {
+      font-size: 18px;
+      width: 100%;
+    }
 
     .name {
       width: 90%;
